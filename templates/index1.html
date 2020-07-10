@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index template works</title>
+</head>
+<body>
+    <h1>welcome to the text analyser</h1>
+    <form action="/analyze" method="get">
+        <textarea style="margin: 0px; width: 591px; height: 62px;" name='text'></textarea><br>
+        <input type="checkbox" name="removepunc">remove punchuations<br>
+        <input type="checkbox" name="lowercase">tern to lowercase<br>
+        <input type="checkbox" name="uppercase">tern to uppercase<br>
+        <input type="checkbox" name="removenew">remove new line<br>
+        <input type="checkbox" name="rexspace">remove extra space<br>
+        <input type="checkbox" name="charcounter">count the characters<br>
+        <button type="submit">Analize now</button>
+    </form>
+</body>
+</html>
