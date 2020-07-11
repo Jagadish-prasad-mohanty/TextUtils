@@ -8,7 +8,6 @@ def about(request):
     return HttpResponse("<h2>about jagdish</h2> <a href='/' title='google'>back to home</a>")
 def analyze(request):
     dtext=request.POST.get('text','default')
-    print(dtext)
     dcheck=request.POST.get('removepunc','off')
     dcheck1=request.POST.get('lowercase','off')
     dcheck2=request.POST.get('removenew','off')
@@ -38,7 +37,6 @@ def analyze(request):
         for i in dtext:
             if i != "\n" and i !="\r":
                 analyzed=analyzed+i
-                print(analyzed)
         param={'purpose':'remove new line','analyzing_text':analyzed}
         dtext=analyzed
         purposes+=(param['purpose'] + '|')
